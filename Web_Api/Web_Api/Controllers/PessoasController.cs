@@ -76,6 +76,9 @@ namespace Web_Api.Controllers
         public async Task<ActionResult<Pessoa>> PostPessoa(Pessoa pessoa)
         {
             _context.Pessoas.Add(pessoa);
+            // ELG: Entendi que vc usou o EntityFramework para trabalhar os dados no banco.
+            //      Porem, o desafio pediu p vc utilizar as procedures criadas anteriormente para manipular esses dados na base.
+            //      Vc consegue ajustar esse código para manipular os dados na base através das procedures?
             await _context.SaveChangesAsync();
 
             return CreatedAtAction("GetPessoa", new { id = pessoa.IdPessoa }, pessoa);

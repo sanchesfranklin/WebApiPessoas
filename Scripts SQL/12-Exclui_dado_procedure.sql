@@ -1,0 +1,1 @@
+EXEC ExcluiCadastro 2

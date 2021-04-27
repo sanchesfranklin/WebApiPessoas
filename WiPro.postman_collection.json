@@ -1,0 +1,136 @@
+{
+	"info": {
+		"_postman_id": "66c20ab0-0e5b-4cdb-9726-0dc61d85e84e",
+		"name": "WiPro",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Metodo HttpGet",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4123/api/pessoas/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4123",
+					"path": [
+						"api",
+						"pessoas",
+						""
+					]
+				},
+				"description": "http://localhost:4123/api/pessoas/"
+			},
+			"response": []
+		},
+		{
+			"name": "Metodo HttpPost",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Gabriel\",\r\n    \"dataNascimento\": \"2016-06-26T00:00:00\",\r\n    \"salario\": 1500.00,\r\n    \"observacoes\": \"Inserido via Postman\",\r\n    \"nomeMae\": \"Luana\",\r\n    \"nomePai\": \"Sanches\",\r\n    \"cpf\": \"11111111111\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4123/api/pessoas/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4123",
+					"path": [
+						"api",
+						"pessoas",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Metodo HttpPut",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idPessoa\": 3,\r\n    \"nome\": \"Gabriel\",\r\n    \"dataNascimento\": \"2016-06-26T00:00:00\",\r\n    \"salario\": 1500.00,\r\n    \"observacoes\": \"Inserido via Postman, e atualizado com PUT\",\r\n    \"nomeMae\": \"Luana\",\r\n    \"nomePai\": \"Sanches\",\r\n    \"cpf\": \"11111111111\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4123/api/pessoas/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4123",
+					"path": [
+						"api",
+						"pessoas",
+						"3"
+					]
+				},
+				"description": "http://localhost:4123/api/pessoas/3"
+			},
+			"response": []
+		},
+		{
+			"name": "Metodo HttpDelete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4123/api/pessoas/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4123",
+					"path": [
+						"api",
+						"pessoas",
+						"3"
+					]
+				},
+				"description": "http://localhost:4123/api/pessoas/3"
+			},
+			"response": []
+		},
+		{
+			"name": "Metodo HttpGet ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4123/api/pessoas/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4123",
+					"path": [
+						"api",
+						"pessoas",
+						"2"
+					]
+				},
+				"description": "http://localhost:4123/api/pessoas/2"
+			},
+			"response": []
+		}
+	]
+}

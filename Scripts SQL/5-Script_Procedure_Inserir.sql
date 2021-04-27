@@ -7,7 +7,7 @@ CREATE PROCEDURE InserirCadastro
 	@nomeMae VARCHAR(50) = NULL,
 	@nomePai VARCHAR(50) = NULL,
 	@cpf CHAR(11) = NULL
-
+  -- ELG: Ateção para formatação e padronização do código. Remova a linha em branco. 
 AS
 
 BEGIN

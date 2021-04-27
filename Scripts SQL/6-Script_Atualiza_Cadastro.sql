@@ -16,4 +16,5 @@ BEGIN
 	nomeMae = @nomeMae, nomePai = @nomePai, cpf = @cpf
 	WHERE idPessoa = @idPessoa
 
+	-- ELG: O item 6 pede para vc retornar alguma coisa antes de finalizar a execução da procedure.
 END

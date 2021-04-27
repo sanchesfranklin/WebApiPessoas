@@ -1,4 +1,4 @@
-CREATE PROCEDURE BuscaIdPessoa
+CREATE PROCEDURE BuscaIdPessoa -- ELG: Esse script deveria apenas executar a procedure que vc criou no passo 9
 	@pessoaid VARCHAR(20)
 
 AS

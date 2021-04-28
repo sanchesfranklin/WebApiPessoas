@@ -1,8 +1,1 @@
-CREATE PROCEDURE BuscaPessoa
-
-AS
-
-BEGIN
-	SELECT *
-	FROM Pessoas
-END
+EXEC BuscaPessoa

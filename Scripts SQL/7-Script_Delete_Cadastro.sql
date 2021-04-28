@@ -1,6 +1,5 @@
 CREATE PROCEDURE ExcluiCadastro
 	@idPessoa int
-
 AS
 BEGIN
 	DELETE FROM Pessoas

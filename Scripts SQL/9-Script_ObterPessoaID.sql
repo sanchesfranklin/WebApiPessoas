@@ -1,13 +1,8 @@
 CREATE PROCEDURE BuscaIdPessoa
-	@pessoaid VARCHAR(20)
-
+	@pessoaid int
 AS
-
-SET @pessoaid = '%' + @pessoaid + '%'
-
-SELECT *
-FROM Pessoas
-
-WHERE IdPessoa like @pessoaid;
-
-exec BuscaIdPessoa '1';
+BEGIN
+	SELECT *
+	FROM Pessoas
+	WHERE IdPessoa = @pessoaid;
+END;

@@ -1,6 +1,6 @@
 CREATE PROCEDURE BuscaPessoas
 AS
 BEGIN
-SELECT *
-FROM Pessoas
+	SELECT *
+	FROM Pessoas
 END;

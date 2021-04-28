@@ -19,5 +19,5 @@ BEGIN
 	nomePai = @nomePai, 
 	cpf = @cpf
 	WHERE idPessoa = @idPessoa
-
+	PRINT 'OK'
 END
